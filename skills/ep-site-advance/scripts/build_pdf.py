@@ -15,8 +15,10 @@ from reportlab.lib.styles import ParagraphStyle
 from reportlab.graphics.barcode.qr import QrCodeWidget
 from reportlab.graphics.shapes import Drawing, Circle, String
 from reportlab.graphics import renderPDF
-for w in ["Regular", "Medium", "SemiBold", "Bold", "ExtraBold", "Italic"]:
+for w in ["Regular", "Medium", "SemiBold", "Bold", "Italic"]:
     pdfmetrics.registerFont(TTFont(f"Inter-{w}", os.path.join(HERE, "fonts", f"Inter-{w}.ttf")))
+# "Inter-ExtraBold" is drawn with the bold file (no extra-bold font is shipped)
+pdfmetrics.registerFont(TTFont("Inter-ExtraBold", os.path.join(HERE, "fonts", "Inter-Bold.ttf")))
 pdfmetrics.registerFontFamily("Inter-Regular", normal="Inter-Regular", bold="Inter-Bold", italic="Inter-Italic", boldItalic="Inter-Bold")
 from route_icons import draw_icon, NAVY, INK, SLATE, LINE, AMBER, GREEN, RED, BLUE, PALE, ORANGE, LBLUE
 

@@ -13,8 +13,10 @@ sys.path.insert(0, HERE)
 FONTS = os.path.join(HERE, "..", "assets", "fonts")
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-for n in ["Regular", "Medium", "SemiBold", "Bold", "ExtraBold", "Italic"]:
+for n in ["Regular", "Medium", "SemiBold", "Bold", "Italic"]:
     pdfmetrics.registerFont(TTFont("Inter-" + n, os.path.join(FONTS, "Inter-" + n + ".ttf")))
+# "Inter-ExtraBold" is drawn with the bold file (no extra-bold font is shipped)
+pdfmetrics.registerFont(TTFont("Inter-ExtraBold", os.path.join(FONTS, "Inter-Bold.ttf")))
 from reportlab.lib.fonts import addMapping
 for _n in ["Inter-Regular", "Inter-Medium", "Inter-SemiBold"]:
     addMapping(_n, 0, 0, _n); addMapping(_n, 1, 0, "Inter-Bold"); addMapping(_n, 0, 1, "Inter-Italic"); addMapping(_n, 1, 1, "Inter-Bold")

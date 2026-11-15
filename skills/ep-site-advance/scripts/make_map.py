@@ -10,7 +10,7 @@ MP = D["map"]
 LON0, LAT0 = MP["center"]; Z = MP.get("zoom", 17); CX, CY = 1000, 800
 KX = 256 * 2 ** Z * 2 / 360.0; KY = KX / math.cos(math.radians(LAT0))
 def ll(x, y): return (LAT0 - (y - CY) / KY, LON0 + (x - CX) / KX)
-F = lambda w, s: ImageFont.truetype(os.path.join(HERE, "fonts", f"Inter-{w}.ttf"), s)
+F = lambda w, s: ImageFont.truetype(os.path.join(HERE, "fonts", "Inter-%s.ttf" % ("Bold" if w == "ExtraBold" else w)), s)
 NAVY = (15, 27, 45); AMBER = (227, 163, 59); BLUE = (31, 95, 191); ORANGE = (217, 119, 43); WHITE = (255, 255, 255); INK2 = (96, 38, 128)
 COL = {"blue": BLUE, "navy": NAVY, "amber": AMBER, "grey": (90, 101, 119)}
 

@@ -1,0 +1,17 @@
+name: EP Route Planner
+description: A comment, suggestion or problem with the route advance skill.
+title: "[Route planner] "
+labels: ["route-planner"]
+body:
+  - type: textarea
+    id: comment
+    attributes:
+      label: Your comment or suggestion
+      description: What would make the route advance more useful for your team? If something went wrong, say what you asked for and what came out.
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: Your role (optional)
+      description: For example, driver, detail lead, advance agent.

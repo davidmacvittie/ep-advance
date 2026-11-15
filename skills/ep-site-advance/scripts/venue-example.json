@@ -1,0 +1,524 @@
+{
+ "out": "/mnt/project-files/ep-advance-sample/kennedy-center-site-advance-v2.pdf",
+ "short": "Kennedy Center",
+ "code": "ATLAS",
+ "footer_tag": "TEST: MADE-UP EVENT, PUBLIC PLACES",
+ "sub": "Kennedy Center, 2700 F St NW, Washington, DC 20566  |  Sat Dec 12, 2026, arrive 7:00 PM, leave 10:00 PM (event end)  |  Orange = check on your visit",
+ "venue_rows": [
+  [
+   "Status",
+   "<font color='#B83A3A'><b>Main building closed to the public since Sept 15, 2026,</b> no reopening date; no programming scheduled in its theaters (NBC4, Oct 1). Free events at The REACH, Thu-Sun</font>"
+  ],
+  [
+   "Type",
+   "Performing arts center: Concert Hall, Opera House, Eisenhower Theater and smaller stages, plus The REACH south of the main building"
+  ],
+  [
+   "Entrances",
+   "<b>3 found, shown as options:</b> 1 and 2 plaza doors on the east front (read from the map), 3 The REACH. Service side unknown"
+  ],
+  [
+   "Box office",
+   "Not confirmed: the venue's visit pages wouldn't load for us"
+  ],
+  [
+   "Public rules",
+   "Bag and screening rules not found in public sources we could read"
+  ],
+  [
+   "Parking",
+   "Garage under the building, 6 AM-midnight. North portal from New Hampshire Ave / F St, south portals from 25th St. Performance parking $23"
+  ]
+ ],
+ "help_rows": [
+  [
+   "Hospital",
+   "GWU Hospital, Level I trauma, 900 23rd St NW: ~4 min drive"
+  ],
+  [
+   "Fire and EMS",
+   "DC Fire &amp; EMS Engine 23, 2119 G St NW: ~4 min to the venue"
+  ],
+  [
+   "Police",
+   "MPD Second District, 3320 Idaho Ave NW: ~15 min to the venue. Also on the grounds: U.S. Park Police (Rock Creek Pkwy) and venue security. Ask who responds"
+  ]
+ ],
+ "help_note": "Drive times from Mapbox, typical traffic, read Nov 15, 2026.",
+ "getting_there": [
+  [
+   "Car stop",
+   "Front drive along the plaza (cars and buses seen stopping on imagery). Pick the spot on your visit"
+  ],
+  [
+   "Backup car",
+   "Optional: a second car away from the main one, keys with the main PPS. Spot picked on your visit"
+  ]
+ ],
+ "inputs": [
+  [
+   "Site location",
+   "John F. Kennedy Center for the Performing Arts, 2700 F St NW, Washington, DC 20566"
+  ],
+  [
+   "Event date and time",
+   "Sat Dec 12, 2026, 7:30-10:00 PM (made up for the test)"
+  ],
+  [
+   "Principal's ETA",
+   "7:00 PM"
+  ]
+ ],
+ "light": [
+  [
+   "sunset",
+   "4:46 PM",
+   "Sunset"
+  ],
+  [
+   "moon",
+   "5:16 PM",
+   "Full dark"
+  ],
+  [
+   "car",
+   "7:00 PM",
+   "Arrival, after dark"
+  ]
+ ],
+ "worth": [
+  [
+   "warn",
+   "<b>Confirm the event is on.</b> The main building has been closed since Sept 15 with no reopening date (NBC4, ABC News, Oct 1)."
+  ],
+  [
+   "event",
+   "<b>No event calendar found for Dec 12.</b> Ask the venue what else is on that night. The REACH runs free events Thu-Sun."
+  ],
+  [
+   "car",
+   "<b>Garage portals at both ends:</b> north from F St, south from 25th St. Rock Creek Pkwy runs along the east side."
+  ],
+  [
+   "spot",
+   "<b>Potomac River on the west side.</b> The river path is open to the public."
+  ],
+  [
+   "warn",
+   "<b>Default used:</b> leave time = event end, 10:00 PM. Code name ATLAS."
+  ]
+ ],
+ "clash": {
+  "start": "18:30",
+  "end": "22:30",
+  "public": [
+   {
+    "from": "18:30",
+    "to": "22:30",
+    "text": "No event calendar found for Dec 12, and the main building is closed (since Sept 15). Ask the venue what else is on."
+   }
+  ],
+  "event": {
+   "from": "19:30",
+   "to": "22:00",
+   "text": "Event 7:30-10:00 PM (made up)"
+  },
+  "arrive": "19:00",
+  "leave": "22:00",
+  "arrive_label": "Arrive 7:00, after dark",
+  "leave_label": "10:00: leave (event end)"
+ },
+ "overview": {
+  "image": "img/overview.jpg",
+  "credit": "Imagery (c) Maxar (c) Mapbox (c) OpenStreetMap. North up. Entrance spots read from imagery: approximate. Service side not found."
+ },
+ "points": [
+  [
+   "1",
+   "blue",
+   true,
+   "<b>Option 1: plaza entrance, north door</b> on the east front",
+   "Imagery only",
+   "E1"
+  ],
+  [
+   "2",
+   "blue",
+   true,
+   "<b>Option 2: plaza entrance, south door</b> on the east front",
+   "Imagery only",
+   "E2"
+  ],
+  [
+   "3",
+   "blue",
+   true,
+   "<b>Option 3: The REACH,</b> separate building to the south",
+   "NBC4; imagery",
+   "E3"
+  ],
+  [
+   "G",
+   "navy",
+   true,
+   "<b>Garage, north portal,</b> from New Hampshire Ave / F St",
+   "Venue parking page",
+   "G1"
+  ],
+  [
+   "G",
+   "navy",
+   true,
+   "<b>Garage, south portals,</b> from 25th St",
+   "Venue parking page",
+   "G2"
+  ],
+  [
+   "!",
+   "amber",
+   false,
+   "<b>Entrance plaza and front drive</b>",
+   "Imagery only",
+   "PLAZA"
+  ]
+ ],
+ "cells": [
+  [
+   "opt1",
+   "Option 1: plaza entrance, north door",
+   "E1",
+   "East front, off the plaza and front drive. Read from imagery: confirm the door and which hall it opens into."
+  ],
+  [
+   "opt2",
+   "Option 2: plaza entrance, south door",
+   "E2",
+   "East front, same plaza and drive as option 1. Read from imagery: confirm on your visit."
+  ],
+  [
+   "opt3",
+   "Option 3: The REACH",
+   "E3",
+   "Separate building south of the main one. Open Thu-Sun for free events while the main building is closed (NBC4)."
+  ],
+  [
+   "garage",
+   "Garage, north portal",
+   "G1",
+   "From New Hampshire Ave / F St. Garage open 6 AM-midnight. How the garage connects to the building: ask."
+  ]
+ ],
+ "report_entrances": [
+  "1  Plaza, north door",
+  "2  Plaza, south door",
+  "3  The REACH"
+ ],
+ "checked": [
+  "Main building closed since Sept 15, 2026, no reopening date (NBC4, ABC News, Oct 1)",
+  "No programming scheduled in the main building's theaters (NBC4)",
+  "The REACH runs free events Thu-Sun",
+  "Garage: north portal from F St, south portals from 25th St, 6 AM-midnight, $23 performance parking",
+  "Sunset 4:46 PM, full dark 5:16 PM",
+  "Nearest hospital, fire and police, with drive times"
+ ],
+ "not_checked": [
+  "That the building is open and the event is on",
+  "Which doors are public entrances, and which are open that night",
+  "Service or loading door and who controls it",
+  "Box office, bag and screening rules",
+  "How the garage connects to the building",
+  "Holding room, event space, restrooms, fire exits",
+  "Who polices the grounds: venue security, Park Police or MPD",
+  "What else is on that night (no calendar found)"
+ ],
+ "couldnt_get": "The venue's own visit and accessibility pages wouldn't load for us, so the entrances come from imagery only, and there's nothing on box office, screening or the inside. No event calendar for Dec 12 could be read, and no source after Oct 1 confirmed whether the building has reopened. Get all of this from the event manager.",
+ "sources": "Read Nov 15, 2026: kennedy-center.org parking page; NBC4 Washington and ABC News (both Oct 1, 2026) on the closure; Mapbox satellite imagery; sunset by NOAA formula; nearest help and drive times from Mapbox, typical traffic. Checklist ideas paraphrased from <i>Introduction to Executive Protection</i>, ch. 3, and the EPI course manual <i>Providing Executive Protection</i> (2020), ch. 4-5. The event, times and principal are made up for the test.",
+ "map": {
+  "center": [
+   -77.056,
+   38.896
+  ],
+  "zoom": 17,
+  "locator_xy": [
+   1100,
+   840
+  ],
+  "locator_label": "Kennedy Ctr",
+  "zones": [
+   {
+    "polygon": [
+     [
+      1358,
+      640
+     ],
+     [
+      1500,
+      640
+     ],
+     [
+      1500,
+      1060
+     ],
+     [
+      1358,
+      1060
+     ]
+    ]
+   }
+  ],
+  "points": [
+   {
+    "mark": "1",
+    "xy": [
+     1362,
+     718
+    ],
+    "color": "blue",
+    "label": "1  Plaza entrance, north door",
+    "dx": -560,
+    "dy": -10
+   },
+   {
+    "mark": "2",
+    "xy": [
+     1362,
+     962
+    ],
+    "color": "blue",
+    "label": "2  Plaza entrance, south door",
+    "dx": -560,
+    "dy": 10
+   },
+   {
+    "mark": "3",
+    "xy": [
+     1262,
+     1505
+    ],
+    "color": "blue",
+    "label": "3  The REACH (separate building)",
+    "dx": -620,
+    "dy": 0
+   },
+   {
+    "mark": "G",
+    "xy": [
+     1335,
+     300
+    ],
+    "color": "navy",
+    "label": "G  Garage, north portal (F St)",
+    "dx": 50,
+    "dy": -60
+   },
+   {
+    "mark": "G",
+    "xy": [
+     1445,
+     1345
+    ],
+    "color": "navy",
+    "label": "G  Garage, south portals (25th St)",
+    "dx": 50,
+    "dy": 60
+   }
+  ],
+  "arrows": [
+   {
+    "path": [
+     [
+      1890,
+      175
+     ],
+     [
+      1760,
+      255
+     ],
+     [
+      1640,
+      360
+     ],
+     [
+      1560,
+      520
+     ],
+     [
+      1535,
+      640
+     ]
+    ],
+    "label": "drive in from F St / New Hampshire Ave",
+    "label_xy": [
+     1520,
+     150
+    ]
+   },
+   {
+    "path": [
+     [
+      1640,
+      850
+     ],
+     [
+      1560,
+      848
+     ],
+     [
+      1470,
+      846
+     ]
+    ],
+    "label": "walk in across the plaza",
+    "label_xy": [
+     1745,
+     800
+    ]
+   },
+   {
+    "path": [
+     [
+      1520,
+      1595
+     ],
+     [
+      1500,
+      1480
+     ],
+     [
+      1470,
+      1390
+     ]
+    ],
+    "label": "from 25th St / Rock Creek Pkwy",
+    "label_xy": [
+     1700,
+     1545
+    ]
+   },
+   {
+    "path": [
+     [
+      770,
+      1560
+     ],
+     [
+      790,
+      1350
+     ],
+     [
+      815,
+      1150
+     ]
+    ],
+    "label": "river path (west)",
+    "label_xy": [
+     640,
+     1200
+    ]
+   }
+  ],
+  "warnings": [
+   [
+    1430,
+    1110
+   ]
+  ],
+  "notes": [
+   {
+    "text": "Entrance plaza: crowds before shows (when open)",
+    "xy": [
+     1010,
+     1180
+    ],
+    "style": "amber"
+   },
+   {
+    "text": "Front drive: cars and buses seen stopping (imagery)",
+    "xy": [
+     1050,
+     560
+    ],
+    "style": "grey"
+   }
+  ],
+  "place_labels": [
+   {
+    "text": "POTOMAC RIVER",
+    "xy": [
+     330,
+     800
+    ]
+   }
+  ],
+  "crops": {
+   "opt1": [
+    1000,
+    420,
+    1700,
+    980
+   ],
+   "opt2": [
+    1000,
+    700,
+    1700,
+    1260
+   ],
+   "opt3": [
+    900,
+    1040,
+    1600,
+    1600
+   ],
+   "garage": [
+    1000,
+    60,
+    1700,
+    620
+   ]
+  },
+  "viewpoints": {
+   "E1": {
+    "xy": [
+     1532,
+     718
+    ],
+    "heading": 270
+   },
+   "E2": {
+    "xy": [
+     1532,
+     962
+    ],
+    "heading": 270
+   },
+   "E3": {
+    "xy": [
+     1470,
+     1540
+    ],
+    "heading": 250
+   },
+   "PLAZA": {
+    "xy": [
+     1532,
+     846
+    ],
+    "heading": 270
+   },
+   "G1": {
+    "xy": [
+     1360,
+     250
+    ],
+    "heading": 200
+   },
+   "G2": {
+    "xy": [
+     1490,
+     1345
+    ],
+    "heading": 270
+   }
+  }
+ }
+}

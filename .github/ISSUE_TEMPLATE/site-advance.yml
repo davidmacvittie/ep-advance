@@ -1,0 +1,17 @@
+name: EP Site Advance
+description: A comment, suggestion or problem with the site advance skill.
+title: "[Site advance] "
+labels: ["site-advance"]
+body:
+  - type: textarea
+    id: comment
+    attributes:
+      label: Your comment or suggestion
+      description: What would make the site advance more useful for your team? If something went wrong, say what you asked for and what came out.
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: Your role (optional)
+      description: For example, advance agent, detail lead, venue security.

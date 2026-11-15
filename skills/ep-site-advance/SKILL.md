@@ -1,6 +1,6 @@
 ---
 name: ep-site-advance
-description: Builds an executive protection site advance for one venue (event space, restaurant or hotel) for a 1-3 person team, in the same fixed 7-page format every time. Stands alone (no route advance needed) and gives the advance person information and a path: every public entrance shown as option 1, 2, 3 on an overview map, nearest help, a one-page advance checklist, entrance close-ups with a Street View QR code for each, an advance report to fill in, and what is and isn't confirmed. Use when someone asks for a site advance, venue advance, venue survey or "advance the venue" for a principal's visit.
+description: "Builds an executive protection site advance for one venue (event space, restaurant or hotel) for a 1-3 person team, in the same fixed 7-page format every time. Stands alone (no route advance needed) and gives the advance person information and a path: every public entrance shown as option 1, 2, 3 on an overview map, nearest help, a one-page advance checklist, entrance close-ups with a Street View QR code for each, an advance report to fill in, and what is and isn't confirmed. Use when someone asks for a site advance, venue advance, venue survey or \"advance the venue\" for a principal's visit."
 ---
 
 # EP Site Advance

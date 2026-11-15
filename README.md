@@ -22,3 +22,7 @@ Connect them in Claude before your first run. Both skills still build a packet w
 All advance skills live here. To comment, open an issue and pick the skill it is about (EP Route Planner or EP Site Advance), so feedback stays with the right skill.
 
 The older repos, ep-route-planner and ep-site-advance, keep their samples and how-to pages and point back here.
+
+## Privacy
+
+[Privacy policy](PRIVACY.md): the skills use only what you type and public map and web data, send nothing to the author and store nothing.

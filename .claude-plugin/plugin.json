@@ -1,6 +1,6 @@
 {
   "name": "ep-advance",
-  "version": "1.3.3",
+  "version": "1.4.0",
   "description": "EP advance skills for small executive protection teams (1 to 3 people), by David MacVittie: one of the first EP-specific Claude skills. Now two skills, with more to come. EP Route Planner builds route advances for the drive team: visual leg maps, a primary and two alternate routes per leg with strip maps and QR codes, predictable spots with an if-blocked plan, hospital runs, rally points, an events check and a recon checklist. EP Site Advance builds a 7-page site advance for one venue: every public entrance as option 1, 2, 3 on an overview map, nearest help, a one-page advance checklist, entrance close-ups with Street View QR codes, and advance and after-event reports. Works best with the Mapbox, TomTom and AccuWeather connectors.",
   "author": {
     "name": "David MacVittie"

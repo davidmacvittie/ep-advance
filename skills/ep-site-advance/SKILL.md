@@ -113,15 +113,16 @@ https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=LAT,LON&heading=DE
 Pick the viewpoint on the street in front of the entrance and the heading toward it. For a point with no useful heading, use a plain map link: https://www.google.com/maps/search/?api=1&query=LAT,LON
 
 ## Visual standards
-Navy header band, Inter font, palette: navy #0F1B2D, amber #E3A33B, green #2F7D57, red #B83A3A, blue #1F5FBF, orange #D9772B for "confirm on recon". Icons: red cross hospital, blue shield police, orange flame fire, green house secure or door, amber triangle warning, grey car. Keep each page to one screen; no page runs over.
+Navy header band, built-in Helvetica font, palette: navy #0F1B2D, amber #E3A33B, green #2F7D57, red #B83A3A, blue #1F5FBF, orange #D9772B for "confirm on recon". Icons: red cross hospital, blue shield police, orange flame fire, green house secure or door, amber triangle warning, grey car. Keep each page to one screen; no page runs over.
 
-## How to build it (scripts in this skill's scripts/ folder)
-The same two scripts build every venue; never write new layout code. All venue facts go in one venue.json; copy scripts/venue-example.json (the Kennedy Center test) and replace every value.
-1. Make a work folder with an img/ subfolder. Save the Mapbox satellite image as img/site.jpg: 2000x1600 at @2x, centered on the venue, zoom 17 (18 for a small site). Put the same center and zoom in venue.json under "map".
-2. Look at the image and fill in "map": entrance points (pixel x, y on the 2000x1600 image), arrows, crowd zones, notes, four 700x560 crop boxes, and a Street View viewpoint on the street outside each point with the heading toward it.
-3. Run `python3 scripts/make_map.py <folder>/venue.json`. It writes img/overview.jpg, the crops and img/viewpoints.json. Look at the overview and fix any label that sits on the wrong spot before going on.
-4. Fill in the rest of venue.json (page 1 rows, help, light, worth knowing, the Clash, points table, entrance cells, report entrance rows, checked and not checked, sources) and run `python3 scripts/build_pdf.py <folder>/venue.json`. The checklist and both reports are built in; never change them per venue. It prints how close each page comes to its bottom margin; if any is below its limit, shorten text.
-5. Render every page to an image and look at each one before sending.
+## How to build it
+This skill has no scripts. You write the build code each time from the layout rules, so every venue gets the same 7-page layout. All venue facts go in one venue.json; copy examples/venue-example.json (the Kennedy Center test) and replace every value.
+1. Read reference/layout.md (every page, size, color and position) and look at the finished pages in reference/pages/.
+2. Make a work folder with an img/ subfolder. Save the Mapbox satellite image as img/site.jpg: 2000x1600 at @2x, centered on the venue, zoom 17 (18 for a small site). Put the same center and zoom in venue.json under "map".
+3. Look at the image and fill in "map": entrance points (pixel x, y on the 2000x1600 image), arrows, crowd zones, notes, four 700x560 crop boxes, and a Street View viewpoint on the street outside each point with the heading toward it.
+4. Write code (Python with pillow) that draws the overview, the close-ups and the viewpoints as layout.md section 6 says. Look at the overview and fix any label that sits on the wrong spot before going on.
+5. Fill in the rest of venue.json (page 1 rows, help, light, worth knowing, the Clash, points table, entrance cells, report entrance rows, checked and not checked, sources). Write code (Python with reportlab, built-in Helvetica fonts) that draws the 7 pages as layout.md sections 7 to 13 say. The checklist and both reports are fixed; never change them per venue. If any page runs past its footer, shorten the venue text.
+6. Render every page to an image and look at each one before sending.
 
 ## Output
 - One PDF, file name "site-advance-<venue>-<date>.pdf" (lower case, hyphens, date as YYYY-MM-DD, for example site-advance-kennedy-center-2026-12-12.pdf), unless the user names the file.

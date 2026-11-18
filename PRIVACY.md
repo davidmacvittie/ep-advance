@@ -11,7 +11,7 @@ EP Advance is a free Claude plugin by David MacVittie. It holds two skills, EP R
 
 ## What the skills do with it
 
-- They build a PDF packet inside your Claude session. The bundled scripts only draw that PDF; they make no internet connections.
+- They build a PDF packet inside your Claude session. The skills ship no code. They tell Claude to write code that only draws the PDF in your session and makes no internet connections.
 - Nothing is sent to David MacVittie or to any other service run by the author.
 - Nothing is stored by the plugin. The packet stays in your Claude session and is yours to keep or delete.
 - The skills do not read passwords, API keys or other credentials.
